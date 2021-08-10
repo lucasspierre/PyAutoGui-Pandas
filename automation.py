@@ -3,6 +3,7 @@ import pyperclip
 
 #Exportando dados
 import pandas as pd
+
 df = pd.read_excel(r'PyAutoGui/Example.xlsx') #Faz a leitura do arquivo excel (xlsx)
 faturamento = df['Valor Final'].sum() #Faz a leitura da coluna 'Valor Final' e faz a soma de todos os valores dos produtos
 qtde_produtos = df['Quantidade'].sum() #Faz a leitura da coluna 'Quantidade' e soma todos os produtos vendidos
